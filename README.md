@@ -25,3 +25,10 @@ I will take a while for that system to download the lean toolchains and mathlib 
 journalctl -u update-leanproject.service -f
 ```
 you can see the progress of updating 
+
+
+## Garnix setup
+
+If you enable https://garnix.io/ for your repository and uncomment the content
+of `garnix.yaml` and push, garnix will deploy a server for you. See
+https://garnix.io/docs/hosting/branch for more details.
