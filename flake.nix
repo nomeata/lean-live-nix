@@ -34,6 +34,16 @@
       ];
       specialArgs = { inherit inputs; isEfi = false; };
     };
+    # a variant that runs on garnix
+    nixosConfigurations.live-garnix = inputs.nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./nixos.nix
+        ./garnix.nix
+        ./live.nix
+      ];
+      specialArgs = { inherit inputs; isEfi = false; };
+    };
     deploy.nodes.live = {
       hostname = "live.example.com";
       profiles.system.path = deployPkgs.deploy-rs.lib.activate.nixos self.nixosConfigurations.live;

@@ -16,3 +16,5 @@ You should be able to run a local virtual machine with the service using like th
 nix run .#nixosConfigurations.live.config.system.build.vm
 ```
 If run this way, the `root` user can log in on the console without a password.
+You can then access the web interface at http://localhost:8888/
+(But it will take a while for that system to download the lean toolchains and mathlib caches.)
