@@ -1,5 +1,5 @@
 servers:
-  - configuration: live
+  - configuration: live-garnix
     deployment:
       type: on-branch
       branch: master

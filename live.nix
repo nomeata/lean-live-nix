@@ -150,5 +150,5 @@ in {
         StartLimitBurst = "3";
       };
     };
-  }
+  };
 }
